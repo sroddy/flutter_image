@@ -166,6 +166,7 @@ class NetworkImageWithRetry extends ImageProvider<NetworkImageWithRetry> {
       exception: lastFailure,
       library: 'package:flutter_image',
       context: '$runtimeType failed to load ${instructions.uri}',
+      silent: true,
     ));
 
     return null;
